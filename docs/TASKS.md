@@ -1,28 +1,21 @@
 # Tasks
 
-## Phase 1 Foundation
+## Phase 1
+- Project initialization
+- LLM provider abstraction
+- Basic tool calling agent
 
-- [ ] Initialize Python project
-- [ ] Create Agent Runtime
-- [ ] Create LLM Provider interface
-- [ ] Support OpenAI compatible APIs
+## Phase 2
+- LangChain integration
+- Database tools
+- RAG
 
-## Phase 2 Agent Core
+## Phase 3
+- LangGraph workflows
+- Human approval
+- Audit logs
 
-- [ ] Tool Registry
-- [ ] Message system
-- [ ] Memory system
-- [ ] Basic agent loop
-
-## Phase 3 Enterprise Features
-
-- [ ] Database integration
-- [ ] RAG knowledge base
-- [ ] LangGraph workflow
-- [ ] Human approval
-- [ ] Audit log
-
-## Phase 4 Applications
-
-- [ ] Ecommerce Agent
-- [ ] PC Manager Agent
+## Phase 4
+- Deep Agents
+- MCP
+- Multi-agent systems

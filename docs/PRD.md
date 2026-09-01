@@ -1,30 +1,17 @@
-# Product Requirements Document
+# Product Requirement Document
 
-## Product
-Enterprise Agent Platform
-
-## Goal
-Create a reusable platform for enterprise AI Agents instead of single-purpose chatbots.
+## Vision
+Build a reusable platform for creating enterprise AI Agents.
 
 ## Problems
-Enterprises need AI that can:
-- understand business goals
-- access company data
-- execute workflows
-- integrate systems
-- maintain permissions and audit logs
+Enterprise workflows contain repetitive operations:
+- data analysis
+- reporting
+- knowledge retrieval
+- system operations
 
-## MVP
-First scenario: Ecommerce Operation Agent.
-
-Capabilities:
-- sales analysis
-- inventory analysis
-- product analysis
-- report generation
-
-## Future Agents
-- PC Manager Agent
-- ERP Agent
-- Construction Agent
-- Finance Agent
+## Goals
+- Support multiple LLM providers
+- Connect enterprise tools
+- Support controlled workflows
+- Enable domain agents

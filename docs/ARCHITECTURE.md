@@ -1,51 +1,22 @@
 # Architecture
 
-## Overview
+Layers:
 
-```
-User
- |
+User Interface
+    |
 Agent Runtime
- |
+    |
 Workflow Engine (LangGraph)
- |
-Tools / RAG / Memory / MCP
- |
+    |
+Tools / MCP / RAG
+    |
 Enterprise Systems
-```
 
-## Layers
 
-### Provider Layer
-Unified interface for:
-- OpenAI
-- DeepSeek
-- Qwen
-- Claude
-- Ollama
-
-### Agent Runtime
-Responsible for:
-- reasoning loop
-- context management
-- tool selection
-
-### Tool Layer
-Examples:
-- database tools
-- browser tools
-- filesystem tools
-- ERP APIs
-
-### Knowledge Layer
-RAG for:
-- SOP documents
-- company rules
-- manuals
-
-### Workflow Layer
-LangGraph manages:
-- state
-- checkpoints
-- human approval
-- long running tasks
+Core modules:
+- Agent Runtime
+- Provider Layer
+- Tool Registry
+- Workflow Engine
+- Memory
+- Knowledge Retrieval

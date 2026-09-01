@@ -1,35 +1,14 @@
 # Agent Development Rules
 
-## Principles
-
-1. Build workflow agents, not simple chatbots.
-
+1. Prefer tools over hallucination.
 2. Separate reasoning and execution.
+3. High risk operations require human approval.
+4. Avoid vendor lock-in.
+5. Keep modules reusable.
 
-LLM:
-- understand
-- plan
-- decide
-
-Tools:
-- query data
-- execute actions
-
-3. Dangerous actions require human approval.
-
-4. All important actions need audit logs.
-
-## Code Rules
-
-- modular design
-- provider abstraction
-- avoid vendor lock-in
-- avoid hardcoded secrets
-
-Every Agent should define:
-- goal
-- tools
-- knowledge
-- memory
-- workflow
-- permissions
+Every agent must define:
+- Goal
+- Tools
+- Memory
+- Workflow
+- Permissions

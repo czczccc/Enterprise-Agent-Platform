@@ -1,68 +1,41 @@
 # Enterprise Agent Platform
 
-## Overview
+A reusable enterprise AI Agent development platform.
 
-Enterprise Agent Platform is a reusable framework for building enterprise AI Agents.
+Goals:
+- Multi LLM provider support
+- Tool calling
+- Workflow orchestration
+- RAG knowledge system
+- MCP integration
+- Human approval workflow
 
-The goal is to provide a common foundation for different business agents:
-
+Target applications:
 - Ecommerce Operation Agent
 - PC Management Agent
 - Enterprise Data Analyst Agent
-- Construction Workflow Agent
 
-## Vision
+## Development
 
-Transform enterprise workflows into AI-powered systems through:
+Requirements:
 
-- LLM reasoning
-- Tool calling
-- Workflow orchestration
-- RAG knowledge retrieval
-- MCP integrations
-- Human approval
+- Python 3.12+
+- [uv](https://docs.astral.sh/uv/)
 
-## Architecture
+Install dependencies and run the API:
 
-User
+```bash
+uv sync
+uv run uvicorn app.main:app --app-dir backend --reload
+```
 
-↓
+The API is available at `http://127.0.0.1:8000`, with health status at
+`GET /health` and interactive documentation at `GET /docs`.
 
-Agent Runtime
+Run the verification suite:
 
-↓
-
-Workflow Engine
-
-↓
-
-Tools / Knowledge / MCP
-
-↓
-
-Enterprise Systems
-
-## First Application
-
-The first demo application is Ecommerce Operation Agent.
-
-It will analyze:
-
-- Sales
-- Inventory
-- Products
-- Customer reviews
-- Business reports
-
-## Supported Models
-
-The platform should support multiple providers:
-
-- OpenAI
-- DeepSeek
-- Qwen
-- Claude
-- Gemini
-- Ollama
-
-Avoid vendor lock-in.
+```bash
+uv run pytest
+uv run ruff check .
+uv run ruff format --check .
+```
